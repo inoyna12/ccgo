@@ -1,4 +1,6 @@
 {
   "show":"1",
-  "msg":"京东签到提示缺少文件的请重新更改拉库命令。\n命令:ql repo https://ghproxy.com/https://github.com/inoyna12/JDsc.git "jd_|jx_|kk_|getJDCookie" "activity|backUp" "^jd[^_]|USER|sendNotify|JD_DailyBonus|utils|function|ql|magic"。\n"
+  "msg":"
+京东签到提示缺少文件的请重新更改拉库命令。\n命令:ql repo https://ghproxy.com/https://github.com/inoyna12/JDsc.git "jd_|jx_|kk_|getJDCookie" "activity|backUp" "^jd[^_]|USER|sendNotify|JD_DailyBonus|utils|function|ql|magic"。\n
+"
 }
