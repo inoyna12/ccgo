@@ -1,0 +1,7 @@
+#bash <(curl -Ls https://ghproxy.com/https://raw.githubusercontent.com/inoyna12/ccgo/master/termux_alpine)
+pkg install -y git
+pkg install -y ncurses-utils
+git clone -b main https://github.com/illvart/termux-alpine.git
+cd termux-alpine
+chmod +x setup-termux-alpine
+./setup-termux-alpine --setup-user
