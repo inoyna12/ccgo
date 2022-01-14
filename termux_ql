@@ -1,5 +1,5 @@
 #bash <(curl -Ls https://ghproxy.com/https://raw.githubusercontent.com/inoyna12/ccgo/master/termux_ql)
-sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories
+#sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories
 apk add --update npm     
 apk add --update nodejs npm
 apk update -f
