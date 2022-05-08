@@ -1,0 +1,4 @@
+pkg install proot-distro
+proot-distro install alpine
+# 进入alpine
+proot-distro login alpine
