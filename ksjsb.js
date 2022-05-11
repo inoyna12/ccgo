@@ -1,17 +1,10 @@
 /*
-IOS/安卓： 快手极速版解密版
-JS脚本透明，用的放心。
-0507版本，内置热心网友的看广告json，已放本人仓库，无需代理，可直接开跑。
-内置990金币+213金币+100金币，三组广告数据，提升收益降低黑号风险。
-预计日收益5-6w金币。
-重写：
-[task_local]
-#快手极速版
-[rewrite_local]
-[MITM]
-#IOS用第一个，安卓用第二个
-hostname = api.kuaisho*.com
-hostname = open.kuaisho*.com
+腾讯阿里云跑不了
+13:00之前跑342金币+699金币（预计跑完5-6次后0金币）
+13:00以后跑80金币+100金币（13点前的0金币后可跑这个）
+四组广告数据混合，提升收益的同时还降低黑号风险。
+预计日收益5w金币。
+快手极速版CK变量ksjsbCookie
 */
 const $$ = Envcc('');
 let acckey = $$["isNode"]() ? process["env"]["cdkey"] ? process["env"]["cdkey"] : '' : $$["getdata"]("cdkey") ? $$["getdata"]("cdkey") : '',
@@ -100,7 +93,7 @@ const _0x11b3c3 = "快手极速版",
 
 let _0x279d25 = '',
     _0x1a0963,
-    _0x4c35fe = ["\n", '@'],
+    _0x4c35fe = ["\n", '@', '&'],
     _0x547212 = (_0x3de8b8["isNode"]() ? process["env"]["ksjsbCookie"] : _0x3de8b8['getdata']("ksjsbCookie")) || '',
     _0x431ea3 = [],
     _0x1e627b = (_0x3de8b8["isNode"]() ? process["env"]["ksjsbCash"] : _0x3de8b8["getval"]("ksjsbCash")) || '',
@@ -148,7 +141,7 @@ const _0x1eb2d5 = {
   'invite': 2008
 },
       _0x3355c4 = {
-  'extParams': "56dfe31594b858e69ef613f5e97227fbe9979240d7caecf84db127b47a4a8bb0a744376361788e9d4f8341978842c3a723b72e4befa3dc60a2c580bf4fc43399f798f286e2c8c3069effa1db27aa45bd",
+  'extParams': "56dfe31594b858e69ef613f5e97227fb03493544e59e2b2a726006e2852ec1040cd969d4748c460ecf574cc487214a91f70592aa8b2225630027c39ca2c544027efa65815d1acea23cb503034b12641c",
   'businessId': 161,
   'pageId': 11101,
   'posId': 4683,
@@ -156,12 +149,12 @@ const _0x1eb2d5 = {
   'name': "获取抽奖次数视频"
 },
       _0x458f20 = {
-  'extParams': "56dfe31594b858e69ef613f5e97227fbf89856abafca7f90fab063cf60935d6faedb05b76646dc3ece57cd4898d412d86e985a2b510216ad4853603d2992501cea0a08182731fcbf023467cf30ecda80",
+  'extParams': "56dfe31594b858e69ef613f5e97227fb2e82277a9c2a55fb8abc69671ac1719704be5d7e57a2b01d0bf5e6638ace22b910dee74365d1dcfa12634981cb43bc69a930709bc1f826ece28ff337f53c355b",
   'businessId': 161,
   'pageId': 11101,
   'posId': 4685,
   'subPageId': 100013630,
-  'name': "抽奖视频161-213"
+  'name': "抽奖视频699+"
 },
       _0x124c4a = {
   'extParams': "56dfe31594b858e69ef613f5e97227fb67b973ad1394855c549442d15702f96393178eaeef5635134bb7e4ff97e69218c1f18455baf645dbaef685b7bf30c0914ea53ddcde26b2fa67b888203dab0fd4",
@@ -169,23 +162,23 @@ const _0x1eb2d5 = {
   'pageId': 11101,
   'posId': 4684,
   'subPageId': 100013629,
-  'name': '抽奖视频161-100'
+  'name': '抽奖视频100+'
 },
       _0x37f16f = {
-  'extParams': "56dfe31594b858e69ef613f5e97227fbe9979240d7caecf84db127b47a4a8bb0a744376361788e9d4f8341978842c3a723b72e4befa3dc60a2c580bf4fc43399f798f286e2c8c3069effa1db27aa45bd",
+  'extParams': "56dfe31594b858e69ef613f5e97227fbac11e097765ecd6a4c94873ff87491be2f5cb0d9bc4f29bf46dda81536af30dcd0083877ea144a8dad4dd23452fa093e4d50e5e831cb47d10d8f735163e486e3",
   'businessId': 11,
   'pageId': 11101,
   'posId': 4684,
   'subPageId': 100013629,
-  'name': "抽奖视频11-100"
+  'name': "抽奖视频342+"
 },
       _0x10efec = {
-  'extParams': '56dfe31594b858e69ef613f5e97227fbe9979240d7caecf84db127b47a4a8bb0a744376361788e9d4f8341978842c3a723b72e4befa3dc60a2c580bf4fc43399f798f286e2c8c3069effa1db27aa45bd',
+  'extParams': '56dfe31594b858e69ef613f5e97227fbcb18b65ce67342c03fd16da46f5dd52b0b37201ad9cf67cdfd05f8c9a5234ae7b24624bc881a52c3c7e6ab22e32f6fd2c0e52c6c0e9b7e312f021e0d41162e7f',
   'businessId': 11,
   'pageId': 11101,
   'posId': 4684,
   'subPageId': 100013629,
-  'name': "抽奖视频11-100"
+  'name': "抽奖视频80+"
 },
       _0x385181 = {
   'extParams': "60869a9fd2ab63f5e0b1725d059da31f7d3ed3046658438ee204a153c3bc47189ccf268b22e603b6750780c9647e7a12b3027381e11da27b234311bccfd4a67bb892f889a4020ceae4f4e102cc50c327",
@@ -227,8 +220,8 @@ let _0x134a17 = new Date(),
     _0x459e63 = 1.07,
     _0x2e716e = 0,
     _0x5bc515 = "ksjsb",
-    _0x180c0c = "http://106.13.207.44:1200/ks.json",
-    ksjsbjk = "https://ziye0.coding.net/p/ziye/d/ql/git/raw/master/ksjsb-ziye.json",
+    _0x180c0c = "http://101.43.186.150:80/ks.json",
+    ksjsbjk = "https://hsqz.coding.net/p/jch/d/JCH/git/raw/master/kss.json",
     _0x75eec0 = "https://127.0.0.1/";
 
 class _0x9d8dda {
@@ -836,7 +829,7 @@ class _0x9d8dda {
   async ["helpPackage"](T, c) {
     let C = {
       'url': "https://ug-fission.kuaishou.com/rest/n/darwin/bargain/overview?version=2.1.0",
-      'body': "{\"fid\":\"895255750\",\"cc\":\"share_wxms\",\"followRefer\":\"151\",\"code\":\"" + T + "\",\"shareMethod\":\"TOKEN\",\"kpn\":\"NEBULA\",\"subBiz\":\"BARGAIN\",\"shareId\":\"16905401129783\",\"shareMode\":\"SYSTEM\",\"noBackNavi\":\"true\",\"originShareId\":\"16905401129783\",\"useMerchantWeb\":\"1\",\"layoutType\":\"4\",\"shareObjectId\":" + JSON["stringify"]("{\"teamId\":\"\",\"packetId\":\"" + c + "\"}") + ",\"shareUrlOpened\":\"0\",\"hyId\":\"bargain\",\"timestamp\":" + +new Date() + ",\"pageCode\":1,\"adamA\":0,\"adamB\":0}",
+      'body': "{\"fid\":\"89750\",\"cc\":\"share_wxms\",\"followRefer\":\"151\",\"code\":\"" + T + "\",\"shareMethod\":\"TOKEN\",\"kpn\":\"NEBULA\",\"subBiz\":\"BARGAIN\",\"shareId\":\"16929783\",\"shareMode\":\"SYSTEM\",\"noBackNavi\":\"true\",\"originShareId\":\"16905783\",\"useMerchantWeb\":\"1\",\"layoutType\":\"4\",\"shareObjectId\":" + JSON["stringify"]("{\"teamId\":\"\",\"packetId\":\"" + c + "\"}") + ",\"shareUrlOpened\":\"0\",\"hyId\":\"bargain\",\"timestamp\":" + +new Date() + ",\"pageCode\":1,\"adamA\":0,\"adamB\":0}",
       'headers': {
         'User-Agent': "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36",
         'Cookie': "kpn=NEBULA; kpf=ANDROID_PHONE; did=; " + Math["floor"](Math["random"]() * 1000 + 1) + " ANDROID_ff60a387f6ba8904; " + this['cookie'] + "; c=XIAOMI; ver=10.2; appver=10.2.41.3075; language=zh-cn; ",
@@ -846,7 +839,7 @@ class _0x9d8dda {
         'Sec-Fetch-Site': "same-origin",
         'Sec-Fetch-Mode': "cors",
         'Sec-Fetch-Dest': "empty",
-        'Referer': "https://ug-fission.kuaishou.com/bargain/?fid=895255750&cc=share_wxms&followRefer=151&code=" + T + "&shareMethod=TOKEN&kpn=NEBULA&subBiz=BARGAIN&shareId=16905401129783&shareMode=SYSTEM&noBackNavi=true&originShareId=16905401129783&useMerchantWeb=1&layoutType=4&shareObjectId=%7B%22teamId%22%3A%22%22,%22packetId%22%3A%22" + c + "%22%7D&shareUrlOpened=0&hyId=bargain&timestamp=" + +new Date(),
+        'Referer': "https://ug-fission.kuaishou.com/bargain/?fid=750&cc=share_wxms&followRefer=151&code=" + T + "&shareMethod=TOKEN&kpn=NEBULA&subBiz=BARGAIN&shareId=16905401129783&shareMode=SYSTEM&noBackNavi=true&originShareId=169783&useMerchantWeb=1&layoutType=4&shareObjectId=%7B%22teamId%22%3A%22%22,%22packetId%22%3A%22" + c + "%22%7D&shareUrlOpened=0&hyId=bargain&timestamp=" + +new Date(),
         'Accept-Language': "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"
       }
     };
@@ -1149,7 +1142,7 @@ async function _0x505e51() {
     if (a["status"] == 0) {
       if (_0x459e63 >= a["version"]) {
         _0x2e716e = true;
-        _0x75eec0 = "https://ziye0.coding.net/p/ziye/d/ql/git/raw/master/ks.json";
+        _0x75eec0 = "https://gitee.com/ajouter/sbww/raw/master/ks.json";
         console["log"](a["msg"][a["status"]]);
         console['log'](a["updateMsg"]);
         console["log"]("现在运行的脚本版本是：1.07，最新脚本版本：" + a["latestVersion"]);
@@ -3472,7 +3465,7 @@ function Envcc(T, c) {
     'CMAOs': "setval",
     'dceom': 'ijzfe',
     'JighY': 'updateMsg',
-    'uwDzR': "https://ziye0.coding.net/p/ziye/d/ql/git/raw/master/ks.json",
+    'uwDzR': "https://gitee.com/ajouter/sbww/raw/master/ksj.json",
     'CvmUM': function (S, a) {
       return S === a;
     },
@@ -3966,7 +3959,7 @@ function Envcc(T, c) {
       if (p["JpIGP"]('ViWHE', p["NOwog"])) {
         if (p["QwtqA"](q, i[p["LTEld"]])) {
           d = true;
-          u = "https://ziye0.coding.net/p/ziye/d/ql/git/raw/master/ks.json";
+          u = "https://gitee.com/ajouter/sbww/raw/master/ksj.json";
           e[p["zptFf"]](A[p['EqCpB']][k[p["Qdwtu"]]]);
           o['log'](g["updateMsg"]);
           t["log"](p["UAuSH"](p["AVAsN"], L[p['prrOr']]));
