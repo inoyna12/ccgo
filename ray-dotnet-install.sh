@@ -3,7 +3,7 @@ echo -e "\n-------set up dot net env-------"
 
 DOWNLOAD_X64=https://download.visualstudio.microsoft.com/download/pr/70fb6022-ef53-473b-bfde-dc8cd6b673ca/2c04303064ed5c5158998c3a0d11fcc1/dotnet-sdk-6.0.201-linux-musl-x64.tar.gz
 DOWNLOAD_ARM32=https://download.visualstudio.microsoft.com/download/pr/09df51a1-5ef7-4db6-90cd-302ae92b7c84/3d000f08ab919f43f61184a3c48b46a8/dotnet-sdk-6.0.201-linux-musl-arm.tar.gz
-DOWNLOAD_ARM64=https://download.visualstudio.microsoft.com/download/pr/e06359eb-25ee-443e-ba8d-4980ea6a9e2c/436e980ac9f10f92c505a0443a321cba/dotnet-sdk-5.0.408-linux-musl-arm64.tar.gz
+DOWNLOAD_ARM64=https://download.visualstudio.microsoft.com/download/pr/a4b0eb89-fa9c-4176-9a37-5dfa9d9a4eb5/a4a438172874354b1c9700350038e313/dotnet-sdk-7.0.100-preview.4.22252.9-linux-musl-arm64.tar.gz
 
 get_download_url_by_machine_architecture() {
     if command -v uname > /dev/null; then
