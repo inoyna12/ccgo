@@ -219,14 +219,14 @@ if __name__ == '__main__':
 
         # 判断是否执行周周赚
         if help_code != '':
-            if datetime.today().isoweekday() == 4 and datetime.now().hour == 14 and datetime.now().minute <= 16:
+#            if datetime.today().isoweekday() == 4 and datetime.now().hour == 14 and datetime.now().minute <= 16:
                 print("\n==============周周赚助力==============\n")
                 for cookie in Cookies:
                     if 'did=' in cookie:
                         ksjsbFriendAssist(cookie.replace("@", "").replace("\n", ""), help_code)
                     else:
                         print("助力失败，快手CK不完整，请重新抓取！")
-            else:
-                print("周周赚助力未开始，助力时间为每周六上午六点零分至六分！")
+#            else:
+#                print("周周赚助力未开始，助力时间为每周六上午六点零分至六分！")
     else:
         print("未找到快手CK,请检查变量名是否为ksjsbck！")
