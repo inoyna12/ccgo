@@ -1,2 +1,3 @@
-echo -e "有问题可去https://github.com/inoyna12/ZeroTermux_ql提交
-等待3s后启动青龙面板"
+echo -e "提交问题:https://github.com/inoyna12/ZeroTermux_ql提交
+
+3s后启动青龙面板"
