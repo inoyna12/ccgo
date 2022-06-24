@@ -1,3 +1,2 @@
-echo -e "等待3s后启动青龙面板
-当前青龙版本2.13.3
-修复？？？？？"
+echo -e "有问题可去https://github.com/inoyna12/ZeroTermux_ql提交
+等待3s后启动青龙面板"
