@@ -1,3 +1,5 @@
-echo -e "提交问题:https://github.com/inoyna12/ZeroTermux_ql/issues
+echo -e "支付宝搜索:769543747，领取每日红包
+
+支持一下作者，谢谢各位
 
 5s后启动青龙面板"
