@@ -3,7 +3,7 @@ import os
 import time
 import requests
 import random
-import hfgCookie
+import utils.hfgCookie
 
 #time.sleep(random.randint(0,3600))
 requests.packages.urllib3.disable_warnings()
