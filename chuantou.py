@@ -2,7 +2,7 @@
 # Version: v1.4
 # Created by lstcml on 2022/07/21
 # 建议定时10分钟：*/10 * * * *
-
+#MTViY2VhYjAtYzNlNC00MDZkLTgyYjItZTI0MWU2MjczY2Y0
 '''
 使用说明：
 1、打开https://www.cpolar.com/注册登录后获取authtoken；
