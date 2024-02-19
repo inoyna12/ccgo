@@ -3,7 +3,7 @@ name: Save Website Content
 on:
   schedule:
     # 每天UTC 00:00运行, 你可以根据需要调整
-    - cron:  '0 0 * * *'
+    - cron:  '0 */4 * * *'
   workflow_dispatch:
 
 jobs:
@@ -16,7 +16,7 @@ jobs:
 
     - name: Fetch Website Content
       run: |
-        curl https://fku-ppg.co.uk/ > website_content.txt
+        curl https://fku-ppg.co.uk/ > ppg.txt
 
     - name: Commit files
       run: |
