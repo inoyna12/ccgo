@@ -4,6 +4,7 @@ on:
   schedule:
     # 每天UTC 00:00运行, 你可以根据需要调整
     - cron:  '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   save-content:
