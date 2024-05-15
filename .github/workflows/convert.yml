@@ -27,7 +27,7 @@ jobs:
     - name: Install Subconverter
       run: |
         cd subconverter_repo
-        pip install -r requirements.txt
+        pip install -r .travis.yml
 
     - name: Run Subconverter
       run: |
