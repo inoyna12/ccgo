@@ -1,0 +1,10 @@
+proxies:
+  - url: "http://dbpngo.xyz/xlvpn"
+    type: "v2ray"
+    name: "v2rayNG"
+
+rules:
+  - type: "select"
+    name: "Proxy"
+    proxies:
+      - "v2rayNG"
