@@ -18,21 +18,26 @@ jobs:
       with:
         python-version: '3.x'
 
+    - name: Clone Subconverter repository
+      run: |
+        if [ ! -d "subconverter_repo" ]; then
+          git clone https://github.com/tindy2013/subconverter.git subconverter_repo
+        fi
+
     - name: Install Subconverter
       run: |
-        git clone https://github.com/tindy2013/subconverter.git
-        cd subconverter
+        cd subconverter_repo
         pip install -r requirements.txt
 
     - name: Run Subconverter
       run: |
-        cd subconverter
-        ./subconverter -g -p /path/to/config.yaml -o /path/to/output.yaml
+        cd subconverter_repo
+        ./subconverter -g -p ../subconverter/config.yaml -o ../subconverter/output.yaml
 
     - name: Commit and push changes
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git add /path/to/output.yaml
+        git add subconverter/output.yaml
         git commit -m 'Update Clash subscription'
         git push
