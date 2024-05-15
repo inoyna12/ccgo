@@ -1,0 +1,38 @@
+name: Convert v2rayNG to Clash
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # 每天运行一次
+  workflow_dispatch:
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install Subconverter
+      run: |
+        git clone https://github.com/tindy2013/subconverter.git
+        cd subconverter
+        pip install -r requirements.txt
+
+    - name: Run Subconverter
+      run: |
+        cd subconverter
+        ./subconverter -g -p /path/to/config.yaml -o /path/to/output.yaml
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add /path/to/output.yaml
+        git commit -m 'Update Clash subscription'
+        git push
