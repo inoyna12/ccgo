@@ -3,7 +3,7 @@ name: Convert Subscription
 on:
   push:
     branches:
-      - main
+      - master
   schedule:
     - cron: '0 */6 * * *' # 每6小时运行一次
 
