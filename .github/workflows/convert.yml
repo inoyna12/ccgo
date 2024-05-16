@@ -1,43 +1,28 @@
-name: Convert v2rayNG to Clash
+name: Convert Subscription
 
 on:
+  push:
+    branches:
+      - main
   schedule:
-    - cron: '0 0 * * *' # 每天运行一次
-  workflow_dispatch:
+    - cron: '0 */6 * * *' # 每6小时运行一次
 
 jobs:
   convert:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
-
-    - name: Clone Subconverter repository
-      run: |
-        if [ ! -d "subconverter_repo" ]; then
-          git clone https://github.com/tindy2013/subconverter.git subconverter_repo
-        fi
-
-    - name: Install Subconverter
-      run: |
-        cd subconverter_repo
-        pip install -r .travis.yml
-
-    - name: Run Subconverter
-      run: |
-        cd subconverter_repo
-        ./subconverter -g -p ../subconverter/config.yaml -o ../subconverter/output.yaml
-
-    - name: Commit and push changes
-      run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git add subconverter/output.yaml
-        git commit -m 'Update Clash subscription'
-        git push
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        
+      - name: Run subconverter
+        run: |
+          docker run --rm -v "${{ github.workspace }}:/subconverter" tindy2013/subconverter:latest /bin/bash -c "wget -qO- http://dbpngo.xyz/xlvpn | ./subconverter" > converted.yaml
+          
+      - name: Commit and push if changes
+        run: |
+          git config --global user.email 'action@github.com'
+          git config --global user.name 'GitHub Actions'
+          git add .
+          git commit -m 'Convert subscription' -a || exit 0 # 只在有更改时提交
+          git push
