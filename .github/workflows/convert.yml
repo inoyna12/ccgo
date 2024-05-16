@@ -38,6 +38,6 @@ jobs:
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.gGITHUB_TOKEN }}
         branch: 'master' # 替换为你的分支名称
         force: true
